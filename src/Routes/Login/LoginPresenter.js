@@ -11,12 +11,12 @@ const Container = styled.div`
   height: 100%;
   display: flex;
 `;
-const MainPresenter = () => (
+const LoginPresenter = () => (
   <Container>
     <Helmet>
-      <title>Main | PlantLens</title>
+      <title>Login | PlantLens</title>
     </Helmet>
   </Container>
 );
 
-export default MainPresenter;
+export default LoginPresenter;
