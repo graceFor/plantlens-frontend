@@ -37,27 +37,6 @@ const MainPresenter = () => (
     <Helmet>
       <title>Main | Nevermind</title>
     </Helmet>
-
-    <Sidebar></Sidebar>
-    <ItemContainer>
-      <div className="w-100">
-        <div className="d-flex justify-content-center">
-          <Logo width="220px" height="195px"></Logo>
-        </div>
-        <Desc>
-          매달 신경쓰였던 '구독정보' <br />
-          <br />
-          이제 Never Mind가 대신 알려드릴게요
-        </Desc>
-        <Link to={"Signup"}>
-          <Button>
-            <button type="button" className="btn btn-outline-dark btn-lg">
-              START
-            </button>
-          </Button>
-        </Link>
-      </div>
-    </ItemContainer>
   </Container>
 );
 

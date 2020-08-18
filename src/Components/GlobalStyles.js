@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
-const globalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
     ${reset};
     @font-face {
         font-family: 'GmarketSansBold';
@@ -23,4 +23,4 @@ const globalStyles = createGlobalStyle`
 
 `;
 
-export default globalStyles;
+export default GlobalStyles;
