@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const RestIcon = styled.img.attrs({
-  src: "./logo.png",
+  src: "./logos.png",
 })`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
