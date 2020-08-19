@@ -88,7 +88,7 @@ const SignupPresenter = () => {
   return (
     <Container>
       <Helmet>
-        <title>Sign Up | PlantLens</title>
+        <title>Sign Up | Nevermind</title>
       </Helmet>
       <Sidebar></Sidebar>
       <TextContainer>
@@ -192,7 +192,7 @@ const SignupPresenter = () => {
             data-placement="top"
             data-html="true"
           >
-            PlaneLens 이용을 위한 필수 이용약관
+            Never Mind 이용을 위한 필수 이용약관
           </label>
         </div>
 
@@ -240,7 +240,7 @@ const SignupPresenter = () => {
         </div>
       </Form>
       <AskSignup className="my-3">
-        이미 가입하셨나요?{" "}
+        이미 가입하셨나요?&nbsp;
         <Link to={"Login"}>
           <GotoLogin>로그인하기</GotoLogin>
         </Link>
