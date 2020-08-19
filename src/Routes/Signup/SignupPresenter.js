@@ -55,7 +55,7 @@ function setSignupTooltipTitleForTermLabels(title_txt) {
 function setSignupTooltip() {
   initTooltip();
   setSignupTooltipTitleByName("username", "이름을 입력하세요");
-  setSignupTooltipTitleByName("cellphone", "전화번호 입력 후<br>본인인증을 클릭하세요");
+  setSignupTooltipTitleByName("cellphone", "전화번호을 입력하세요");
   setSignupTooltipTitleByName("verify_cellphone", "인증 페이지로 이동합니다");
   setSignupTooltipTitleByName("email", "이메일을 입력하세요");
   setSignupTooltipTitleByName("pwd", "비밀번호를 입력하세요");
@@ -109,32 +109,18 @@ const SignupPresenter = () => {
             required
           />
         </div>
-        <div className="d-flex">
-          <div className="form-group">
-            <label htmlFor="validationServer01">Cell_Phone</label>
-            <input
-              type="tel"
-              name="cellphone"
-              className="mt-2 form-control"
-              aria-describedby="validatedInputGroupPrepend"
-              data-toggle="tooltip"
-              data-placement="top"
-              data-html="true"
-              required
-            />
-          </div>
-          <div className="d-flex flex-column justify-content-center mt-2 ml-3">
-            <button
-              type="button"
-              className="btn btn-light"
-              name="verify_cellphone"
-              data-toggle="tooltip"
-              data-placement="top"
-              data-html="true"
-            >
-              본인인증
-            </button>
-          </div>
+        <div className="mb-3">
+          <label htmlFor="validationServer01">Cell_Phone</label>
+          <input
+            type="tel"
+            name="cellphone"
+            className="mt-2 form-control"
+            aria-describedby="validatedInputGroupPrepend"
+            data-toggle="tooltip"
+            data-placement="top"
+            data-html="true"
+            required
+          />
         </div>
 
         <div className="mb-3">
@@ -192,25 +178,7 @@ const SignupPresenter = () => {
             data-placement="top"
             data-html="true"
           >
-            Never Mind 이용을 위한 필수 이용약관
-          </label>
-        </div>
-
-        <div className="custom-control custom-checkbox mb-2 was-validated">
-          <input
-            type="checkbox"
-            className="custom-control-input"
-            id="agree_open_banking_term_of_use"
-            required
-          />
-          <label
-            className="mt-2 pt-1 custom-control-label term-label"
-            htmlFor="agree_open_banking_term_of_use"
-            data-toggle="tooltip"
-            data-placement="top"
-            data-html="true"
-          >
-            오픈뱅킹서비스 이용약관
+            Plant Lens 이용을 위한 필수 이용약관
           </label>
         </div>
 
