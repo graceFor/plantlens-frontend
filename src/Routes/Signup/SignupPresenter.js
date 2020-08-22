@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Sidebar from "Components/Sidebar";
 import Helmet from "react-helmet";
 import Logo from "Components/Logo";
 import { Link } from "react-router-dom";
@@ -11,7 +10,6 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +20,7 @@ const Form = styled.form`
 `;
 const TextContainer = styled.div`
   display: flex;
+  margin-top: 9%;
   justify-content: center;
   margin-bottom: 20px;
 `;
@@ -33,12 +32,12 @@ const Text = styled.div`
 `;
 
 const AskSignup = styled.p`
-  color: grey;
+  color: #4d1212;
   text-align: center;
 `;
 
-const GotoLogin = styled.a`
-  color: #ca444a;
+const GotoLogin = styled.span`
+  color: red;
 `;
 
 function initTooltip() {
@@ -55,11 +54,10 @@ function setSignupTooltipTitleForTermLabels(title_txt) {
 function setSignupTooltip() {
   initTooltip();
   setSignupTooltipTitleByName("username", "이름을 입력하세요");
-  setSignupTooltipTitleByName("cellphone", "전화번호을 입력하세요");
-  setSignupTooltipTitleByName("verify_cellphone", "인증 페이지로 이동합니다");
+  setSignupTooltipTitleByName("cellphone", "010-0000-0000 형식으로 <br> 전화번호 입력하세요");
   setSignupTooltipTitleByName("email", "이메일을 입력하세요");
   setSignupTooltipTitleByName("pwd", "비밀번호를 입력하세요");
-  setSignupTooltipTitleByName("pwd_confirm", "비밀번호를<br>한번 더 입력하세요");
+  setSignupTooltipTitleByName("pwd_confirm", "비밀번호를 한번 더 입력하세요");
   setSignupTooltipTitleForTermLabels("필수 약관입니다");
 }
 
@@ -90,7 +88,6 @@ const SignupPresenter = () => {
       <Helmet>
         <title>Sign Up | Nevermind</title>
       </Helmet>
-      <Sidebar></Sidebar>
       <TextContainer>
         <Logo width="90px" height="80px"></Logo>
         <Text>회원가입</Text>
@@ -104,7 +101,7 @@ const SignupPresenter = () => {
             className="mt-2 form-control"
             aria-describedby="validatedInputGroupPrepend"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
             required
           />
@@ -112,12 +109,12 @@ const SignupPresenter = () => {
         <div className="mb-3">
           <label htmlFor="validationServer01">Cell_Phone</label>
           <input
-            type="tel"
+            type="text"
             name="cellphone"
             className="mt-2 form-control"
             aria-describedby="validatedInputGroupPrepend"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
             required
           />
@@ -131,7 +128,7 @@ const SignupPresenter = () => {
             className="mt-2 form-control"
             aria-describedby="validatedInputGroupPrepend"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
             required
           />
@@ -145,7 +142,7 @@ const SignupPresenter = () => {
             className="mt-2 form-control"
             aria-describedby="validatedInputGroupPrepend"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
             required
           />
@@ -158,7 +155,7 @@ const SignupPresenter = () => {
             className="mt-2 form-control"
             aria-describedby="validatedInputGroupPrepend"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
             required
           />
@@ -175,10 +172,10 @@ const SignupPresenter = () => {
             className="mt-2 pt-1 custom-control-label term-label"
             htmlFor="agree_nevermind_term_of_use"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
           >
-            Plant Lens 이용을 위한 필수 이용약관
+            Plant Lens 이용을 위한 필수 이용약관&nbsp;
           </label>
         </div>
 
@@ -193,10 +190,10 @@ const SignupPresenter = () => {
             className="mt-2 pt-1 custom-control-label term-label"
             htmlFor="agree_privacy_policy"
             data-toggle="tooltip"
-            data-placement="top"
+            data-placement="right"
             data-html="true"
           >
-            개인정보 처리 방침
+            개인정보 처리 방침&nbsp;
           </label>
         </div>
         <div className="d-flex justify-content-center">
