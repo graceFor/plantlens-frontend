@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         background-image: url(${backPath});
         background-position: center;
+        background-position: fixed;
         background-size: cover;
         background-repeat: no-repeat;
 

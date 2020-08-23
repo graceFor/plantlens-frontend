@@ -5,14 +5,7 @@ import Logo from "Components/Logo";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  margin: 0;
-  padding: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 100%;
-  height: 5%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 `;
 const Nav = styled.ul`
   margin-left: 4%;
@@ -20,17 +13,42 @@ const Nav = styled.ul`
 `;
 const Navbar = () => (
   <Container>
-    <Link to={"Main"}>
-      <Logo
-        width="30px"
-        height="30px"
-        margin-left="30%"
-        class="d-inline-block align-top opacity-2"
-        alt=""
-        loading="lazy"
-      ></Logo>
-    </Link>
-    <Nav>Home</Nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        Navbar
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Link
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+              Disabled
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </Container>
 );
 
