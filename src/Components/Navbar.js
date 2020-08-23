@@ -7,16 +7,17 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
   background-color: rgba(255, 255, 255, 0.5);
 `;
-const Nav = styled.ul`
-  margin-left: 4%;
-  margin-right: 4%;
+const Nav = styled.a`
+  color: #4d1212;
 `;
 const Navbar = () => (
   <Container>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        Navbar
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <Nav>
+        <a class="navbar-brand text-#4d1212" styled="" href="#">
+          Navbar
+        </a>
+      </Nav>
       <button
         class="navbar-toggler"
         type="button"
