@@ -13,11 +13,10 @@ const Nav = styled.a`
 const Navbar = () => (
   <Container>
     <nav class="navbar navbar-expand-lg navbar-light ">
-      <Nav>
-        <a class="navbar-brand text-#4d1212" styled="" href="#">
-          Navbar
-        </a>
-      </Nav>
+      <a class="navbar-brand text-#4d1212" styled="" href="#">
+        Navbar
+      </a>
+
       <button
         class="navbar-toggler"
         type="button"
