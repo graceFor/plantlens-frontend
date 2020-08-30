@@ -32,7 +32,6 @@ const Text = styled.div`
 `;
 
 const AskSignup = styled.p`
-  color: grey;
   text-align: center;
 `;
 

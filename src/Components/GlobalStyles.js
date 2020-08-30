@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        
     }
     #root {
         font-family: 'paybooc-Bold';

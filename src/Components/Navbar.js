@@ -5,50 +5,59 @@ import Logo from "Components/Logo";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 0.8);
 `;
-const Nav = styled.a`
-  color: #4d1212;
+
+const List1 = styled.ul`
+  margin-left: 12px;
+  display: flex;
+`;
+
+const List2 = styled.ul`
+  position: fixed;
+  margin-left: 88%;
+  float: right;
+`;
+
+const Item = styled.li`
+  width: 90px;
+  height: 50px;
+  float: right;
+  text-align: center;
+`;
+const SLink = styled(Link)`
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const Navbar = () => (
   <Container>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand text-#4d1212" styled="" href="#">
-        Navbar
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Search
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-              Disabled
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <List1>
+      <SLink to="/">
+        <Logo width="30px" height="30px"></Logo>
+      </SLink>
+      <Item>
+        <SLink to="/">PlantLens</SLink>
+      </Item>
+    </List1>
+    <List2>
+      <Item>
+        <SLink to="/Signup">Sign up</SLink>
+      </Item>
+      <Item>
+        <SLink to="/Login">Login</SLink>
+      </Item>
+    </List2>
   </Container>
 );
 
