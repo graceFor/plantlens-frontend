@@ -57,6 +57,9 @@ const Navbar = () => (
       <Item>
         <SLink to="/Login">Login</SLink>
       </Item>
+      <Item>
+        <SLink to="/Login">Search</SLink>
+      </Item>
     </List2>
   </Container>
 );
