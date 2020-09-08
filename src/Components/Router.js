@@ -12,6 +12,7 @@ export default () => (
       <Route path="/" exact component={Main} />
       <Route path="/Signup" component={Signup} />
       <Route path="/Login" component={Login} />
+      <Route path="/Search" component={Search} />
       <Redirect from="*" to="/" />
     </Switch>
   </Router>
