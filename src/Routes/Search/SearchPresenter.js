@@ -12,6 +12,8 @@ const Container = styled.div`
   display: flex;
 `;
 
+const Button = styled.button``;
+
 const SearchPresenter = () => (
   <Container>
     <Helmet>
