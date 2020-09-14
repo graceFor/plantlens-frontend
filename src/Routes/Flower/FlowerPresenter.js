@@ -17,7 +17,7 @@ const Button = styled.button``;
 const FlowerPresenter = () => (
   <Container>
     <Helmet>
-      <title>Flower | Nevermind</title>
+      <title>Flowers | Nevermind</title>
     </Helmet>
   </Container>
 );
