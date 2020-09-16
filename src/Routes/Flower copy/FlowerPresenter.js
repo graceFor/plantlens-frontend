@@ -14,12 +14,12 @@ const Container = styled.div`
 
 const Button = styled.button``;
 
-const LeafPresenter = () => (
+const FlowerPresenter = () => (
   <Container>
     <Helmet>
-      <title>Leaf | PlantLens</title>
+      <title>Flowers | PlantLens</title>
     </Helmet>
   </Container>
 );
 
-export default LeafPresenter;
+export default FlowerPresenter;

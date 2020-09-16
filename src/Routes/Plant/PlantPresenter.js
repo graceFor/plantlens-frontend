@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Helmet from "react-helmet";
-import Logo from "../Plant/node_modules/Components/Logo";
+import Logo from "Components/Logo";
 
 const Container = styled.div`
   margin: 0;
@@ -17,9 +17,9 @@ const Button = styled.button``;
 const LeafPresenter = () => (
   <Container>
     <Helmet>
-      <title>Leaf | PlantLens</title>
+      <title>Plant | PlantLens</title>
     </Helmet>
   </Container>
 );
 
-export default LeafPresenter;
+export default PlantPresenter;
