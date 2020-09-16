@@ -17,7 +17,7 @@ const Button = styled.button``;
 const SearchPresenter = () => (
   <Container>
     <Helmet>
-      <title>Search | Nevermind</title>
+      <title>Search | PlantLens</title>
     </Helmet>
   </Container>
 );

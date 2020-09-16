@@ -35,7 +35,7 @@ const Button = styled.p`
 const MainPresenter = () => (
   <Container>
     <Helmet>
-      <title>Main | Nevermind</title>
+      <title>Main | PlantLens</title>
     </Helmet>
   </Container>
 );

@@ -86,7 +86,7 @@ const SignupPresenter = () => {
   return (
     <Container>
       <Helmet>
-        <title>Sign Up | Nevermind</title>
+        <title>Sign Up | PlantLens</title>
       </Helmet>
       <TextContainer>
         <Logo width="90px" height="80px"></Logo>

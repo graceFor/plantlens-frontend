@@ -47,7 +47,7 @@ const ForgotPW = styled.a`
 const LoginPresenter = () => (
   <Container className>
     <Helmet>
-      <title>Login | Nevermind</title>
+      <title>Login | PlantLens</title>
     </Helmet>
     <TextContainer>
       <Logo width="90px" height="80px"></Logo>
