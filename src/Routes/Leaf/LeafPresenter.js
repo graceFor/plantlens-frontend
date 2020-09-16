@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Helmet from "react-helmet";
-import Logo from "../Leaf/node_modules/Components/Logo";
+import Logo from "Components/Logo";
 
 const Container = styled.div`
   margin: 0;
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Button = styled.button``;
 
-const FlowerPresenter = () => (
+const LeafPresenter = () => (
   <Container>
     <Helmet>
       <title>Leaf | PlantLens</title>
