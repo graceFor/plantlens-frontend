@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Button = styled.button``;
 
-const LeafPresenter = () => (
+const PlantPresenter = () => (
   <Container>
     <Helmet>
       <title>Plant | PlantLens</title>
